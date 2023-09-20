@@ -1,0 +1,92 @@
+---
+title: "R Lidar Workshop"
+author: "Jacob"
+date: "2023-08-06"
+output: html_document
+---
+
+```{r eval=FALSE, include=FALSE}
+install.packages("data.table")
+
+install.packages("dbscan")
+
+install.packages("deldir")
+
+install.packages("dplyr")
+
+install.packages("geometry")
+
+install.packages("lidR")
+
+install.packages("sf")
+
+install.packages("shiny")
+
+install.packages("shinyFiles")
+
+install.packages("shinyjs")
+
+install.packages("terra")
+
+install.packages("RCSF")
+
+install.packages("randomForest")
+
+```
+
+```{r}
+library(phyloseq)
+library(data.table)
+library(dbscan)
+library(deldir)
+library(dplyr)
+library(geometry)
+library(lidR)
+library(sf)
+library(shiny)
+library(shinyFiles)
+library(shinyjs)
+library(terra)
+library(RCSF)
+library(randomForest)
+library(FPCALSpackage)
+```
+
+here are six tools available through the
+tabs in the
+GUI, these are:
+1.
+Pre
+-
+processing
+tasks
+;
+2.
+Plot
+-
+area scale metric estimation of basic metrics and extraction of model covariates;
+3.
+Stand
+-
+area scale estimation of basic metric
+s;
+4.
+Large area scale estimation of basic metrics;
+5.
+Individual tree crown delineation and estimation of tree size metrics;
+6.
+Satellite leaf area index calculation.
+The following
+will describe the
+basic function of each of these tabs. We recommend you use the Rs
+tudio
+API when using this package.
+
+
+
+#Launching the GUI program
+
+```{r}
+fpc.lidar.app()
+```
+
